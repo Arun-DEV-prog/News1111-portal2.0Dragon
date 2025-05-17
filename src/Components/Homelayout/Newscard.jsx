@@ -3,9 +3,11 @@ import { AiFillStar } from 'react-icons/ai';
 import { FiShare2 } from 'react-icons/fi';
 import PropTypes from 'prop-types';
 import moment from 'moment';
+import { Link } from 'react-router';
 
 const NewsCard = ({ news }) => {
   const {
+    id,
     title,
     author,
     image_url,
@@ -52,7 +54,7 @@ const NewsCard = ({ news }) => {
         {details.length > 250 ? (
           <>
             {details.slice(0, 250)}...
-            <span className="text-blue-600 font-semibold cursor-pointer"> Read More</span>
+            <Link to={`/new-details/${id}`} className="text-blue-600 font-semibold cursor-pointer"> Read More</Link>
           </>
         ) : (
           details

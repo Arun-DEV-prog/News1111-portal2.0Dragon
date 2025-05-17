@@ -13,6 +13,7 @@
     "@tailwindcss/vite": "^4.1.6",
     "daisyui": "^5.0.35",
     "date-fns": "^4.1.0",
+    "firebase": "^11.7.3",
     "moment": "^2.30.1",
     "prop-types": "^15.8.1",
     "react": "^19.1.0",
